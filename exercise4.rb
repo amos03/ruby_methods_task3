@@ -27,4 +27,18 @@ p another_method_returns_zero
 
 # Write a method that multiplies two numbers that are passed. If the second number is not passed, it should multiply the first number with itself (ie. square it).
 
+def two_numbers (num1, num2=nil)
+    if num2==nil
+        return num1 * num1
+    else
+        return num1 * num2
+end
+end
+
+puts "The output below should be 10"
+p two_numbers(2, 5)
+
+puts "The output below should be 4"
+p two_numbers (2)
+
 # Write a method that takes two numbers are returns the larger one. If only one number is passed, return it. If no numbers are passed, return nil.
