@@ -43,3 +43,27 @@ puts "------------------------------------"
 
 #print out provided string quantity no. of times
 puts "Print out provided string X no. of times"
+
+def quantity_string(quantity, provided_string)
+    x=1 
+    while x <= quantity
+        x = x+1
+        puts provided_string
+    end
+end
+
+quantity_string(5, "Hi there!")
+
+#using a different type of method
+def quantity_string_method2(quantity, provided_string)
+    quantity.times{puts provided_string}
+end
+
+quantity_string_method2(4, "a different method")
+
+#a third method
+def quantity_string_method3(quantity, provided_string)
+    puts "#{provided_string} ||| " * quantity
+end
+
+quantity_string_method3(5, "third method")
