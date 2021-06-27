@@ -42,3 +42,25 @@ puts "The output below should be 4"
 p two_numbers (2)
 
 # Write a method that takes two numbers are returns the larger one. If only one number is passed, return it. If no numbers are passed, return nil.
+
+def return_larger_number (num1=nil, num2=nil)
+    if num1==nil
+        return nil
+    elsif num2==nil
+        return num1
+    elsif num1>num2
+        return num1
+    elsif num1<num2
+        return num2
+    end
+end
+
+puts "Outputting larger number of two numbers"
+puts "No input:"
+p return_larger_number
+puts "Only one input:"
+p return_larger_number(5)
+puts "Entering 102 and 2000"
+p return_larger_number(102, 2000)
+puts "Entering 500 and 4"
+p return_larger_number(500, 4)
