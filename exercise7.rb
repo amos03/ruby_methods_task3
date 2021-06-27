@@ -51,6 +51,7 @@ def quantity_string(quantity, provided_string)
         puts provided_string
     end
 end
+puts "------------------------------------"
 
 quantity_string(5, "Hi there!")
 
@@ -60,6 +61,7 @@ def quantity_string_method2(quantity, provided_string)
 end
 
 quantity_string_method2(4, "a different method")
+puts "------------------------------------"
 
 #a third method
 def quantity_string_method3(quantity, provided_string)
@@ -67,3 +69,13 @@ def quantity_string_method3(quantity, provided_string)
 end
 
 quantity_string_method3(5, "third method")
+puts "------------------------------------"
+
+# Return hash with information about new-born baby
+puts "Outputting hash with information about new baby"
+def baby_information(weight, name, date_of_birth)
+baby_info={weight: weight, name: name, birthdate: date_of_birth}
+end
+
+p baby_information("2.5 kg", "Tehila", "May 2, 2019")
+puts "------------------------------------"
